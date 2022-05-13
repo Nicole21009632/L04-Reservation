@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3ff">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/header"
+                android:textColor="#8080e4"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hiddenResetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tagline"
+                android:backgroundTint="#f3f3ff"
+                android:textColor="#8080e4"
+                android:textStyle="italic"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="380dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#8080e4" />
+
+            <TextView
+                android:id="@+id/hiddenText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="#8080e4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#8080e4" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/border"
+                    android:inputType="textPersonName"
+                    android:hint="@string/last_name"
+                    android:textColorHint="#8080e4" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/border"
+                android:inputType="phone"
+                android:hint="@string/phone_number"
+                android:textColorHint="#8080e4" />
+
+            <EditText
+                android:id="@+id/sizeOfGroup"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/border"
+                android:inputType="number"
+                android:hint="@string/size_of_group"
+                android:textColorHint="#8080e4" />
+
+            <RadioGroup
+                android:id="@+id/smokingAreaChoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/smoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="@string/smoking"
+                android:textColor="#8080e4" />
+
+            <RadioButton
+                android:id="@+id/nonSmoking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/non_smoking"
+                android:layout_weight="1"
+                android:textColor="#8080e4" />
+
+            <RadioButton
+                android:id="@+id/noPref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/no_preference"
+                android:layout_weight="1"
+                android:textColor="#8080e4" />
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="380dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#8080e4" />
+
+            <TextView
+                android:id="@+id/dateHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textColor="#8080e4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layout_gravity="center"
+                android:scaleX="0.9"
+                android:scaleY="0.9" />
+
+            <TextView
+                android:id="@+id/timeHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="#8080e4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:timePickerMode="spinner" />
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="20dp"
+                android:text="@string/confirm_booking"
+                android:backgroundTint="#8080e4"/>
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:text="@string/reset"
+                android:backgroundTint="#f3f3ff"
+                android:textColor="#8080e4"
+                style="?android:attr/borderlessButtonStyle"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
